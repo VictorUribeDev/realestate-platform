@@ -1,0 +1,152 @@
+/* public/css/styles.css */
+/* Estilos del Navbar */
+.navbar {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.navbar-brand img {
+    height: 120px;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #555;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1.5rem 0;
+    }
+    
+    .navbar-brand img {
+        height: 80px;
+    }
+}
+
+/* Cards de Propiedades */
+.propiedades-card .card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.propiedades-card .card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.image-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Iconos Redes Sociales */
+.social-icon {
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+#instagram-icon:hover { color: #C13584 !important; }
+#tiktok-icon:hover { color: #000 !important; }
+#facebook-icon:hover { color: #3b5998 !important; }
+#linkedin-icon:hover { color: #0077b5 !important; }
+#youtube-icon:hover { color: #FF0000 !important; }
+
+/* Banner de Video */
+.video-banner {
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+    background-color: #000;
+    color: #fff;
+}
+
+#youtube-player {
+    height: 400px;
+}
+
+/* Sección Sobre Nosotros */
+.flies-card .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    min-height: 300px;
+}
+
+.flies-card .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* Utilidades */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.price-highlight {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Formulario de Contacto */
+.contact-form .form-control {
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}

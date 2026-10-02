@@ -1,0 +1,51 @@
+# Environment and configuration
+includes/config.php
+.env
+.env.local
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Dependencies
+vendor/
+node_modules/
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# Uploads and user content
+public/images/propiedades/
+public/videos/propiedades/
+!public/images/propiedades/.gitkeep
+!public/videos/propiedades/.gitkeep
+
+# Cache and temp files
+*.cache
+tmp/
+temp/
+*.tmp
+
+# OS files
+ehthumbs.db
+Desktop.ini
+
+# Error logs
+admin/error.log
+*.log
+
+# PHP
+.php-cs-fixer.cache
+.phpunit.result.cache
+
+# Testing
+coverage/
+phpunit.xml
